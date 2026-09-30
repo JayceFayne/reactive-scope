@@ -1,0 +1,21 @@
+[package]
+name = "reactive-scope"
+version = "0.1.0"
+authors = ["Jayce Fayne <jayce.fayne@mailbox.org>"]
+repository = "https://github.com/jaycefayne/reactive-scope"
+edition = "2024"
+description = "A fine-grained reactive scope."
+license = "MIT"
+categories = ["data-structures", "rust-patterns"]
+keywords = ["reactive", "reactivity", "signals", "effects"]
+readme = "README.md"
+
+[dependencies]
+smallbox = "0.8"
+smallvec = { version = "1", features = ["const_new", "union"] }
+slotmap = "1"
+vec-btree-map = "0.8"
+bitflags = "2"
+
+[build-dependencies]
+rustc_version = "0.4"
